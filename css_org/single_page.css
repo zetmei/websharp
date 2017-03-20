@@ -1,0 +1,1699 @@
+	/*------------------------------------------------------------------
+	Theme Name: SHARP
+	Author URI: http://www.begonia.tw/
+	Description: Index Layout
+	Author: Begonia Design, Inc.
+	------------------------------------------------------------------*/
+
+	@charset "utf-8";
+	/*------------------------------------------------------------------
+	index
+	------------------------------------------------------------------*/
+	/*排版用*/
+	.content {
+    background-color: rgba(248, 247, 245, 0.42);
+    padding: 2% 0%;
+  }
+  /*內容白框區*/
+  .content_in{
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    padding: 25px 2%;
+    background-color: #F1F1F1;
+    box-shadow: 0px 0px 0px 1px #CDCBC4;
+    overflow: hidden;
+    clear: both;
+}
+/**************************最新情報清單******/
+#newslist h1{
+  color: #395898;
+}
+
+/*瀑布流*/
+/* ---- button-group ---- */
+.button-group{
+	position: relative;
+	margin: 0px auto 4px;
+	text-align: center;
+	width: auto;
+	letter-spacing: -4px;
+}
+
+.button-group:after {
+	position: absolute;
+ 	content: '';
+    display: block;
+    clear: both;
+}
+
+.button-group .button {
+	border-radius: 0;
+	margin-left: 0;
+	margin-right: 0px;
+	letter-spacing: 0px;
+}
+
+/* ---- button ---- */
+.button-group .button {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  color: #999;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  font-size: 17px;
+  cursor: pointer;
+  width: 113px;
+  margin:0;
+}
+.button:after,.button.is-checked:after{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;  
+  background-color:#ccc; 
+}
+
+
+.color0.is-checked,.color0:hover{ color:#020202; }
+.color1.is-checked,.color1:hover{ color:#F559F4; }
+.color2.is-checked,.color2:hover{ color:#F37E2E; }
+.color3.is-checked,.color3:hover{ color:#444455; }
+.color4.is-checked,.color4:hover{ color:#26B774; }
+.color5.is-checked,.color5:hover{ color:#EE000D; }
+
+.color0.is-checked:after,.color0:hover:after{ height:3px; background-color:#020202; }
+.color1.is-checked:after,.color1:hover:after{ height:3px; background-color:#F559F4; }
+.color2.is-checked:after,.color2:hover:after{ height:3px; background-color:#F37E2E; }
+.color3.is-checked:after,.color3:hover:after{ height:3px; background-color:#444455; }
+.color4.is-checked:after,.color4:hover:after{ height:3px; background-color:#26B774; }
+.color5.is-checked:after,.color5:hover:after{ height:3px; background-color:#EE000D; }
+
+
+/* ---- isotope ---- */
+
+#newslist .isotope {
+ margin-bottom: 30px;
+}
+
+/* clear fix */
+#newslist .isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .news_blocks ---- */
+.grid-sizer{ width: 19%; }
+
+#newslist .news_blocks{
+  position: relative;
+  float: left;
+  width: 19%;
+  height: auto;
+  margin: 0.5%;
+  padding: 0;
+  color: #262524;
+}
+#newslist .news_blocks.news_blocks_big{
+  width: 39%;
+}
+.meduim_show{
+  display: none;
+}
+
+#newslist .news_blocks img{
+	width: 100%;
+	border: 1px solid rgba(0,0,0,0.15);
+}
+#newslist .news_blocks a{
+
+}
+#newslist .news_blocks .musk{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(238, 0, 17, 0.59);
+}
+#newslist .news_blocks:hover .musk{
+	display: block;
+}
+
+#newslist .news_blocks .musk span{
+  font-family: Michroma,Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  border-bottom: 1px solid #D6D6D6;
+  color: #FFFFFF;
+  line-height: 27px;
+  display: block;
+  width: 92%;
+  margin: 5% auto 3% auto;
+  padding: 0 0 0% 0;
+
+}	
+#newslist .news_blocks .musk h3 {
+  width: 92%;
+  font-size: 15px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  font-weight: bold;
+  margin: 0 auto;
+  color: #FFFFFF;
+  line-height: 22px;
+}
+/*兩倍大*/
+#newslist .news_blocks_big .musk span{
+  font-size: 16px;
+  font-weight: normal;
+  color: #FFFFFF;
+  line-height: 27px;
+
+}	
+#newslist .news_blocks_big .musk h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #FFFFFF;
+  line-height: 24px;
+}
+#newslist .news_blocks.advertising:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+  background:url(../images/page/news/news_icon.png) center center no-repeat;
+  background-size: 29%;
+}
+/*光箱調整*/
+.reveal-modal.small{
+  width: 45%;
+}
+.reveal-modal{
+  padding: 1rem 1rem 1rem;
+  border-radius: 0px; 
+}
+.flex-video{
+  margin-bottom: 0rem; 
+}
+/*******************************************NEWS內頁*/
+#news h1{
+  color: #395898;
+  margin-bottom: 45px;
+}
+.news_L,.news_R{
+  /*outline:#F00 dashed 1px;*/
+}
+.news_L{
+  padding: 0;
+  margin-bottom: 20px;
+}  
+.news_R{
+  padding: 0px 1.5% 20px;
+  border-bottom: 1px dotted #CDCBC4;
+}
+.news_R .content_in{
+    padding: 26px 30px;
+}
+/*NEWS左邊*/
+/* news_in內頁*/
+.news_in .news_in_txt01{
+  font-size: 16px;
+ /* font-family: 'Great Vibes', cursive;*/
+  color: #ee0011;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+.news_in h3{
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  margin-top: 0px;
+  border-bottom: 1px dotted #333;
+  padding-bottom: 8px;
+}
+
+/*news*/
+.news_in_page_all{
+  clear: both;
+  margin-top:70px;
+}
+.news_in_page{
+   clear: both;
+   overflow: hidden;
+   margin: 8px 0;
+}
+.news_in_txt02{
+  display: block;
+  float: left;
+  text-align: center;
+  color:#b5b5b5;
+  font-size: 14px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  padding: 0px 5px 0 5px;
+}
+.news_in_txt02:hover{
+  color:#ee0011;
+}
+.news_in_txt03{  
+  display: block;
+  float: left;
+  max-width: 190px;
+  color:#333;
+  font-size: 14px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  letter-spacing: 0px;
+  line-height: 21px;
+ 
+}
+/*右邊編輯器內部*/
+.news_R h2{
+  font-size: 25px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  font-weight: bold;
+  margin: 0 auto;
+  color: #333;
+  line-height: 50px;
+  background-color: #F7F6F5;
+  border:1px solid #FFFFFF;
+  height: 50px;
+  box-shadow: 0px 0px 0px 1px #CDCBC4;
+  padding-left: 2%;
+  margin-bottom: 3%;
+}
+.news_R p{
+  padding: 0 2%;
+  font-size: 16px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+}
+
+.news_R ul{
+  list-style-type: none;
+}
+.news_R ul li{
+  position: relative;
+  padding-left: 11px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+}
+.news_R ul li:after{
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 18px;
+  background-color: #595959;
+  top: 4px;
+  left: 0;
+}
+
+
+/*********************************產品支援選單共用*/
+.product_support {
+ /* background:url(../images/bg01.png) 0 0 no-repeat;*/
+  padding: 2% 4%;
+  min-height: 550px;
+}
+.product_support .page_ul{
+  list-style-type: none;
+  margin-left: 0;
+  border-bottom: 1px solid #CCC;
+  margin-top: 20px;
+  letter-spacing: -4px;
+}
+.product_support .page_ul li{
+    position: relative;
+    display: inline-block;
+    background-color: transparent; 
+    letter-spacing: 1px;
+    width: 50%;
+    text-align: center;
+    max-width: 130px;
+}
+.product_support .page_ul li a{
+   font-size: 17px;
+  color:#333;  
+}
+.product_support .page_ul li.active a{
+  color:#ee0011;
+  
+}
+.product_support .page_ul li.active:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  bottom:-2px;
+  left:0;
+  background-color: #f00;    
+}
+
+.product_support .page_ul li:hover a{
+  color:#ee0011;
+}
+.product_support .page_ul li:hover:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  bottom:-2px;
+  left:0;
+  background-color: #f00;
+}
+/*****************************************型錄電子檔*/
+.product_support h1{
+  color: #000;
+}
+/*edm下載*/
+#dm_dl .dm_ul{
+  position: relative;
+  padding: 0 2px 16px 2px;
+}
+#dm_dl .dm_ul span,#dm_dl .dm_ul a{
+  position: relative;  
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+#dm_dl .dm_ul .dm_body{
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  border: 1px solid #D6D6D6;
+  box-shadow: 0px 1px 1px #D9D9D9;
+}
+
+#dm_dl .dm_ul .dm_body .dm_img{
+  position: relative;
+}
+#dm_dl .dm_ul .dm_body .dm_img:hover .musk{
+  opacity: 1;
+}
+#dm_dl .dm_ul .dm_body .dm_img .musk{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0, 0, 0, 0.31);*/
+  background-color: rgba(255, 255, 255, .41);
+  opacity: 0;
+  transition:.3s;
+}
+#dm_dl .dm_ul .dm_body .dm_img .musk:after{
+   position: absolute;
+  top: 12px;
+  right: 9px;
+  content: '下     載';
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  padding: 3px 10px;
+  border-radius: 3px;
+  line-height: 20px;
+  border: 1px solid rgba(160, 160, 160, 0.67);
+}
+#dm_dl .dm_ul img{
+  width: 100%;
+}
+
+#dm_dl .dm_ul .dm_body .dm_txt{  
+  height: 60px;
+  border-top: 1px solid #D6D6D6;
+  padding: 10px 13px;
+}
+#dm_dl .dm_ul .dm_body .dm_txt p{
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  font-weight: bold;
+  margin: 0 auto;  
+  text-align: left;
+}
+#dm_dl .dm_ul .dm_body .dm_txt .p01{
+  font-size: 14px;
+  color: #234d88;
+  line-height: 22px;
+}
+#dm_dl .dm_ul .dm_body .dm_txt .p02{
+  font-size: 12px;
+  color: #000;
+  line-height: 22px;
+}
+/**************************人才招募-職缺說明******/
+/*#hr_detail{
+  padding: 2% 0%;
+}*/
+#hr_detail h1{
+  color: #000;
+}
+#hr_detail .version_p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  color: #000;
+  margin-top: 22px;
+}
+#hr_detail .hr_detail_wrap{
+    border-bottom: 1px dotted #CDCBC4;
+    padding: 0 0 20px 0;
+}
+
+
+
+#hr_detail table td:nth-child(1){width: 20%;}
+#hr_detail table td:nth-child(2){width: 80%;}
+#hr_detail table tr:nth-of-type(even) {
+    background: #F9F9F9;
+}
+
+/*右區塊*/
+.hr_ps{ 
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 26px 24px 38px;
+  overflow: hidden;
+  background-color: #fff;
+  border: solid 1px #DDDDDD;
+  margin-bottom: 15px;
+}
+
+.hr_ps span{
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color:#6A6A6A;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+    
+}
+.hr_ps span a{
+  font-size: 16px;
+  color:#6A6A6A;
+  text-decoration: underline;
+}
+.hr_ps span a:hover{
+  opacity: .7;
+}
+.hr_ps span.p_empha{
+  font-size: 16px;
+  color:#000;
+  line-height: 33px;
+  font-weight: bold;
+}
+/*微調*/
+.hr_ps .adjust01{
+  margin-top: 11px;
+} 
+.hr_ps .musk{
+    position: absolute;
+    top: 90%;
+    display: block;
+    width: 127%;
+    height: 50%;
+    background-color: #ee0011;
+    /*opacity: 0.36;*/
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    left: -8%;
+}
+.hr_ps .musk_txt{
+  position: absolute;
+  bottom: 1px;
+  right: 7px;
+}
+.hr_ps .musk_txt a{
+  font-size: 14px;
+  color:#fff;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  text-decoration: none;
+}
+/**************************隱私權政策******/
+#privacy_policy{
+    padding: 2% 4% 0 4%;
+}
+#privacy_policy .row{
+  margin: 0% 0%;
+}
+#privacy_policy h1{
+  color: #333;
+ /* margin-bottom: 20px;*/
+}
+#privacy_policy .privacy_policy_txt{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/*配圖*/
+#privacy_policy .version_side{
+  position: absolute;
+  width: 100%;
+  max-width: 248px;
+  height: 353px;
+  right: 1%;
+  bottom: 0;
+  background: url(../images/page/full_vision/privacy02.png) right bottom no-repeat;
+  background-size: 100%;
+}
+/**************************客服-共用******/
+.service_page{
+  padding: 2% 4%;
+}
+.service_page h1{
+  color: #333;
+}
+.row .row.service_h1{
+  margin: 0 0;
+}
+/*客戶服務內選單*/
+.service_page .page_ul{
+  list-style-type: none;
+  margin-left: 0;
+  border-bottom: 1px solid #CCC;
+  margin-top: 20px;
+  letter-spacing: -4px;
+}
+.service_page .page_ul li{
+    position: relative;
+    display: inline-block;
+    padding: 0px 0px 3px;
+    letter-spacing: 1px;
+    width: 16.6%;
+    text-align: center;
+}
+.service_page .page_ul li a{
+  display: block;
+   font-size: 17px;
+  color:#333;  
+}
+.service_page .page_ul li.active a{
+  color:#ee0011;  
+}
+.service_page .page_ul li.active:after{
+  position: absolute;
+  bottom: :-1px;
+  content: '';
+  width: 100%;
+  height: 3px;
+  bottom:0;
+  left:0;
+  background-color: #f00; 
+}
+.service_page .page_ul li:hover a{
+  color:#ee0011;
+
+}
+.service_page .page_ul li:hover:after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 3px;
+  bottom:0;
+  left:0;
+  background-color: #f00;
+}
+
+/**************************客服-分公司據點******/
+.branch_wrap{
+  box-shadow: 0px 0px 0px 1px #CDCBC4; 
+}
+.row .row.branch_wrap{
+   margin:0;
+}
+.branch_L,.branch_R{  
+  padding: 0;
+}
+/*左邊導覽列*/
+.branch_L ul{
+  margin:0;
+  border: 1px solid #D6D6D6; 
+  background-color: #EEE;
+  border-right: none;
+}
+.branch_L ul li{
+  padding: 18px 16px;
+  position: relative;
+  border-bottom: 1px solid #CDCBC4;
+  border-right: 1px solid #cdcbc4;
+}
+.branch_L ul li .branch_block{
+
+}
+.branch_L ul li .branch_block a{
+  position: relative;
+}
+.branch_L .branch_block .p01{
+  color:#A4A0A0;
+  font-size: 22px;
+  line-height: 22px; 
+  margin: 0;  
+  text-shadow: 0px 1px 0px #fff;
+}
+
+.branch_L ul li .branch_block .p02{
+  color:#b4b4b4;
+  font-size: 13px;
+  letter-spacing: 0px;
+  line-height: 21px;
+ margin: 6px 0px;
+   text-shadow: 0px 1px 0px #fff;
+   width: 92%;
+}
+
+.branch_L ul li .branch_block span.arrow{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  background: url(../images/layout/icon_16.png) 0 top no-repeat;
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-size: 16px;
+  margin-top:-7px;
+  /*transiton:1s;*/
+}
+/*hover*/
+.branch_L ul li:hover{
+  background-color: #fff;
+  font-weight: bold;
+  color:#234d88; 
+  border-bottom: 1px solid #CDCBC4;
+  border-right: 1px solid #cdcbc4;
+}
+.branch_L ul li:hover .branch_block .p01{   
+  color:#A4A0A0;  
+}
+.branch_L ul li:hover .branch_block .p02{
+ color:#b4b4b4;
+}
+
+.branch_L ul li:hover .branch_block span.arrow{
+  background: url(../images/layout/icon_16.png) 0 -16px no-repeat;
+  background-size: 16px;
+}
+/*.active*/
+.branch_L ul li.active{
+  background-color: #fff;
+  font-weight: bold;
+  color:#234d88; 
+  border-bottom: 1px solid #CDCBC4;
+  border-right: 1px solid #cdcbc4;
+
+}
+.branch_L ul li.active .branch_block .p01{
+   font-weight: bold;
+  color:#234d88; 
+}
+.branch_L ul li.active .branch_block .p02{
+  color:#333;
+}
+
+.branch_L ul li.active .branch_block span.arrow{
+  background: url(../images/layout/icon_16.png) 0 -16px no-repeat;
+  background-size: 16px;
+}
+
+.branch_L ul li:nth-child(1){
+  border-top:none;
+}
+/*右邊*/
+.branch_R{
+  position: relative;
+  padding-bottom: 47.9%; 
+}
+.branch_R .img_wrap{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.branch_R iframe{
+   position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.branch_R img{
+  width: 100%;
+}
+.branch_R .img_body{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%; 
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 20;
+  /*padding: 10px 30px;*/
+  padding: 10px 8px;
+}
+.branch_R .img_body span{
+  display: inline-block;
+}
+.branch_R span.txt_L{
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+.branch_R span.txt_R{
+  float: right;
+  font-size: 14px;
+  line-height: 27px;
+}
+/**************************客服-服務據點******/
+#service_location{
+
+}
+.location_wrap{  
+    border: 1px solid #D6D6D6;
+    box-shadow: 0px 1px 1px #D9D9D9;
+}
+/*底部圓角*/
+.row .row.location_wrap,.wrap_info{
+  border-radius: 0 0 8px 8px;
+  margin: 0 auto;
+}
+.location_wrap .columns{
+  padding:0;
+}
+.wrap_map{
+    position: relative;
+    padding-bottom: 34%;
+    height: 0;
+    overflow: hidden;
+}
+.wrap_map div{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*第一個地圖在最上面*/
+.wrap_map div.begin{
+  z-index: 10;
+}
+ul.wrap_nav{
+  list-style-type: none;  
+  margin: 0;
+  width: 100%; 
+  background-color: #292929;
+  padding-left: 40px;
+  height: 40px;/*不知道為什麼高度變41*/
+}
+ ul.wrap_nav li{
+    display: inline-block;  
+    width: 60px;
+    text-align: center;  
+    
+}
+ ul.wrap_nav li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+     font-size: 15px;
+    line-height: 40px;
+    color: #959595;
+    transition:.02s;
+ }
+ul.wrap_nav li:hover, 
+ul.wrap_nav li.active{
+background: url(../images/layout/icon_17.png) no-repeat center bottom;
+}
+ul.wrap_nav li:hover a, 
+ul.wrap_nav li.active a{
+    color: #fff;
+    font-size: 16px;
+}
+.wrap_info{
+   background-color: #fff;
+   padding: 28px 5% 28px;    
+}
+.row .row.wrap_info{
+  margin:0;
+}
+.info_L{
+  position: relative;
+  border-right: 1px #ccc dotted;
+}
+.wrap_info p{
+  margin: 0;
+}
+.wrap_info p.txt_01{
+  color:#ee0011;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: bold;
+}
+.wrap_info p.txt_02{
+  color:#6e6e6e;
+  font-size: 14px;
+  line-height: 27px;
+}
+/*右邊選單*/
+.info_R{}
+.info_R ul{
+    margin: 8px 0 0 84px;
+}
+.info_R ul li{
+  display: inline-block;
+  width: 45%;
+  padding-left: 16px;
+  background: url(../images/layout/icon_18.png) left 10px no-repeat;
+}
+.info_R ul li a{
+    line-height: 31px;
+    color:#6e6e6e;
+}
+.info_R ul li:hover,.info_R ul li.active{
+  background: url(../images/layout/icon_01.png) left 10px no-repeat;
+
+}
+.info_R ul li:hover a,.info_R ul li.active a{
+  font-weight: bold;
+}
+
+/**************************客服-線上叫修******/
+#service_repair{
+  /*background:url(../images/page/bg01.png) 0 0 no-repeat;*/
+}
+/**************************客服-產品註冊******/
+#service_register{
+  /*background:url(../images/page/bg01.png) 0 0 no-repeat;*/
+}
+/**************************客服-產品註冊******/
+#service_contact{
+  /*background:url(../images/page/bg01.png) 0 0 no-repeat;*/
+}
+
+#service_contact .repair_ps span{
+  text-align: center;
+}
+#service_contact a.logo_bg{
+  display: block;
+  width: 115px;
+  text-indent: -9999px;
+  background: url(../images/layout/logo.png) 0 0 no-repeat;
+  background-size: 100%;
+  font-size: 0;
+  margin: 0 auto;
+}
+.service_page .btn{
+    height: 36px;
+  display: inline-block;
+  margin: 0 1%;
+  text-align: center;
+  line-height: 32px
+  ;
+  width: 46%;
+}
+/*提示區塊共用*/
+.row .row.repair_wrap{
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+.service_page .repair_ps{ 
+  position: relative;
+  float: left;
+  width: 100%;
+  padding: 15px 24px 50px;
+  overflow: hidden;
+  background-color: #fff;
+  border: solid 1px #DDDDDD;
+  margin-bottom: 15px;
+}
+#service_register .repair_ps,
+#service_contact .repair_ps{
+   padding: 15px 24px 19px;
+}
+.service_page .repair_ps span{
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color:#6A6A6A;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+    
+}
+.service_page .repair_ps span a{
+  font-size: 16px;
+  color:#6A6A6A;
+  text-decoration: underline;
+}
+.service_page .repair_ps span.p_empha{
+  font-size: 17px;
+  color: #000;
+  line-height: 33px;
+  text-align: center;
+}
+.service_page .repair_ps .adjust01{
+  margin-top: 20px;
+} 
+.service_page .repair_ps .musk{
+    position: absolute;
+    top: 90%;
+    display: block;
+    width: 127%;
+    height: 50%;
+    background-color: #ee0011;
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    left: -8%;
+}
+#service_contact.service_page .repair_ps .musk,
+#service_register.service_page .repair_ps .musk{
+  top: 94%;
+  -webkit-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+.service_page .repair_ps .musk_txt{
+  position: absolute;
+  bottom: 1px;
+  right: 7px;
+}
+.service_page .repair_ps .musk_txt a{
+  font-size: 14px;
+  color:#fff;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  text-decoration: none;
+}
+/*叫修表格標題*/
+.service_page .hr_block{ 
+  color: #fff;
+  -webkit-background-image: linear-gradient(#4F4F4F 0%, #282828 100%);
+  -ms-background-image: linear-gradient(#4F4F4F 0%, #282828 100%);
+  -moz-background-image: linear-gradient(#4F4F4F 0%, #282828 100%);
+  background-image: linear-gradient(#4F4F4F 0%, #282828 100%);
+  background-color: #4F4F4F; 
+  background-size: 100%;
+  box-shadow: 0px 0px 0px 1px #CDCBC4;
+  line-height: 45px;
+  font-size: 15px;
+  padding: 0px 24px;
+}
+.service_page .hr_block span{ 
+   padding: 2px 0 2px 28px;
+}
+
+/*線上叫修*/
+#service_repair .hr_block span{
+  background: url(../images/layout/icon_19.png) 0 0px no-repeat;
+   background-size: 23px;
+}
+/*產品註冊*/
+#service_register .hr_block span{
+  background: url(../images/layout/icon_19.png) 0 -60px no-repeat;
+   background-size: 23px;
+}
+/*聯絡我們*/
+#service_contact .hr_block span{
+  background: url(../images/layout/icon_19.png) 0 -29px no-repeat;
+   background-size: 23px;
+}
+/*副標題背景*/
+.service_page td.table_h3{
+     text-align: center;
+} 
+.service_page  td.table_h3 span{
+  position: relative;
+  font-size: 19px;
+  color: #404040;
+ /* font-weight: 700;*/
+}
+ /*客戶服務共用 表格內容*/
+
+.service_page table td.td_L{ 
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+}
+.service_page table td.td_R{ width: 80%;}
+
+.service_page table tr:nth-of-type(even) {
+    background: #F9F9F9;
+}
+
+.service_page table td{
+  vertical-align: top;
+  font-size: 15px;
+  padding: 15px 20px 15px;  
+}
+.service_page .row table td .row{
+   margin-left: 0rem;
+  margin-right: 0rem;
+}
+.service_page table td .columns{
+  padding:0rem;
+} 
+.service_page table td .columns.padding-rigiht-125{
+    padding-right: 0.125rem;
+  }
+
+.service_page table td input{
+  margin-bottom: 0;
+}
+.service_page table td select{
+   margin-bottom: 5px;
+ }
+  /*微調*/
+.service_page .confirm_R img{
+  border: 1px solid #E4E4E4;
+  width: auto;
+  height: 40px;
+}
+#service_dealer .service_page .adjust02{
+  margin-top: 5px;
+}
+.service_page .adjust03{
+  width: 119px;
+  display: inline;
+  height: 24px;
+  margin-left: 6px;
+}
+.service_page label{
+line-height: 24px;  
+}
+.service_page .line3 label {
+  display: inline-block;
+  width: 40%;
+}
+.service_page .line2 label {
+  display: inline-block;
+  width: 100%;
+}
+/*0626*/
+.ziplarge-5{
+  width: 41%;
+  margin-right: 0.66667%;
+}
+.service_page table td input.zipcode_input{
+   width: 16.66667%;
+   margin-bottom: 5px;
+}
+
+
+/**************************客服-網路經銷商認證******/
+.row .row.dealer_wrap{
+  box-shadow: 0px 0px 0px 1px #CDCBC4; 
+  min-height: 500px;
+  margin:0;
+  }
+.row .row.secure_BOX{
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px 6px 6px 6px;
+  box-shadow: 0 1px 1px #B5B5B5;
+  padding:20px;
+    width: 100%;
+  margin: 0 auto;
+}
+.row .row.secure_BOX .adjust01{
+  width: 100%;
+  margin: 0px auto;
+}
+
+.secure_search{
+   text-align: right;
+} 
+.secure_L p{  margin: 10px 0;}
+.secure_R{text-align: center;}
+
+.dividers_line{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #D4D4D4;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 20px 0;
+}
+#service_dealer h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: #4C4C4C;
+  margin: 0 0px 8px;
+  padding-left: 30px;
+  background: url(../images/layout/icon_20.png) 0 0px no-repeat;
+}
+#service_dealer select{
+/*用了這個line-height跑掉 我也不知為何 -webkit-appearance: none !important;*/
+  line-height: 22px;
+  height: 26px;
+  padding: 0 0.5rem;
+}
+#service_dealer input{
+  height: 26px;
+  line-height: 26px;
+  padding: 0 0.5rem;
+}
+#service_dealer .btn{
+  height: 26px;
+  display: block;  
+  text-align: center;
+  line-height: 26px;
+  padding: 0;
+  width: 95%;
+  float: right;
+}
+/*經銷商選單*/
+.secure_nav{ 
+  display: inline-block;
+  width:auto;
+  height:auto;
+  letter-spacing: 0px;
+  list-style-type: none;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+}
+.secure_nav>li{
+  position:relative;
+  float: left;
+  font-size: 18px;
+  border-right: #dcdcdc 1px solid;
+  height: 22px;
+}
+.secure_nav>li:last-child{ border-right:none; }
+.secure_nav>li>a{
+  display: block;
+  text-decoration: none;    
+  font-size:15px; 
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  color:#797979; 
+  height:auto;
+  padding: 0 18px;
+  text-align: center;
+  margin-left:0px;  
+  line-height:24px; 
+  font-weight:bold;
+}
+.secure_nav>li>a.active1{ color: #ee0011; }
+.secure_nav>li a:hover{ color:#ee0011; }
+/*.row.adjust04{
+   width: 100%;
+  max-width: 350px;
+  padding: 0 32px;
+  
+}*/
+.adjust04 div{padding:0 0px;}
+
+
+
+
+
+
+/*凍結型經銷商表格*/
+/*比較內容*/
+#service_dealer .compare_wrap{
+  border: 1px solid #DDD;
+}
+#service_dealer .dealer_R_fix{
+  overflow: scroll;
+  /*height: 300px;*/
+}
+#service_dealer .dealer_R_scroll{
+  /*height: 300px;*/
+}
+#service_dealer .dealer_set{
+  width: 245px;
+  float: left;
+}
+#service_dealer .dealer_set table{
+  border: none;
+}
+/*產品區塊*/
+#service_dealer .dealer_set{
+   border-right: 1px solid #ECECEC;
+}
+#service_dealer table.table_dealer{
+  margin-bottom: 0;
+}
+#service_dealer table.table_dealer th.hr_block{
+  font-size: 14px;
+  text-align:center;
+  font-weight: 100;
+  padding:0;
+}
+#service_dealer table.table_dealer td{
+  font-size: 12px;
+  text-align: left;
+  padding: 10px 15px;
+  text-align: center;
+}
+/*上區塊*/
+#service_dealer .compare_img{
+  text-align: center;
+  padding: 20px;  
+  height: 262px;
+}
+#service_dealer .dealer_set select{
+  background-color: #fff;
+  width: 90%;
+  height: 30px;
+  padding: 0 10px;
+}
+
+
+/**************************叫修成功*/
+table.repair_success p{
+   font-size: 15px;
+   line-height: 28px;
+}
+table.repair_success span.txt01{
+  padding: 0 10px;
+   color:#007DDF;
+}
+  .repair_success p{
+        font-size: 13px;
+          margin: 6px 5px;
+  }
+  .repair_success p span{
+        display: inline;
+        font-size: 15px;
+        color:#007DDF;
+        padding: 7px;
+  }
+
+/**************************經銷商搜尋無結果*/
+  .search_none{
+    min-height: 180px;
+    background-color: #f9f9fa;
+    border:1px solid #c9c9c9;
+    margin-top: 5px;
+  }
+  .search_none h4{
+    font-size: 24px;
+    text-align: center;
+    font-family: "å¾®è»Ÿæ­£é»‘é«”";
+    font-weight: bold;
+    border-bottom:1px solid #c9c9c9;
+    width: 95%;
+    margin: 25px auto 10px;
+  }
+  .search_none p{
+    text-align: center;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .search_none p a{
+    color:#007DDF;
+  }
+  .search_none p a:hover{
+    text-decoration: underline;
+  }
+/*********************************產品支援*/
+#software_dl h3{
+  font-size: 18px;
+  font-weight: bold;
+  color: #4C4C4C;
+  margin: 0 0px 8px;
+  padding-left: 30px;
+  background: url(../images/layout/icon_20.png) 0 0px no-repeat;
+}
+#software_dl .table_A{
+  margin-top: 20px;
+}
+#software_dl .table_A td{
+    padding: 0; 
+}
+ul.software_ul{
+    margin: 0 15px; 
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid #D5D5D5;
+}
+ul.software_ul li{
+  display: inline-block;
+  vertical-align: middle;
+}
+/*表格基本設定*/
+ul.software_ul li:nth-child(1){ width: 33%;}
+ul.software_ul li:nth-child(2){ width: 33%;}
+ul.software_ul li:nth-child(3){ width: 10%;}
+ul.software_ul li:nth-child(4){ width: 10%;}
+ul.software_ul li:nth-child(5){ width: 10%;}
+
+
+/*表格細部設定(不含title)*/
+ul.software_ct{
+  border-bottom: 1px dotted #B7B7B7;
+}
+ul.software_ct.border_none{
+  border:none;
+}
+
+ul.software_ct li:nth-child(1) div.icon{
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../images//layout/icon_11.png) 0px 0 no-repeat;
+  background-size: 20px;
+}
+ul.software_ct li:nth-child(1) div.icon.active{
+  background: url(../images//layout/icon_12.png) 0px 0 no-repeat;
+  background-size: 20px;
+}
+ul.software_ct.software_title li:nth-child(1){
+  background: none;
+}
+ul.software_ct li:nth-child(1) a{
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 10px;
+  color:#004173;
+  font-weight: bold;
+  transition:.3s;
+}
+ul.software_ct li:nth-child(1):hover a{
+  opacity: .8;
+
+}
+ul.software_ct li:nth-child(5) a{
+  color: #000;
+  font-size: 12px;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  padding: 3px 10px;
+  border-radius: 3px;
+  line-height: 20px;
+  border: 1px solid rgba(160, 160, 160, 0.67);
+  background-image: linear-gradient(#ffffff 0%, #f1f1f1 100%);  
+}
+ul.software_ct li:nth-child(5):hover a{
+  /*background-color: #000;*/
+}
+/*開合內容*/
+.software_div{
+  padding: 1% 9%;
+  border-bottom: 1px solid #DBDBDB;
+  display: none;
+}
+.software_div p{
+  color: #626262;
+
+}
+.software_div h4{
+    display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007DDF;
+    margin-top: 34px;
+}
+.software_div ul{
+    margin: 0 6% 20px;
+}
+.software_div li{
+  
+}
+
+
+
+
+
+
+	/*------------------------------------------------------------------
+	Different Width Solution
+	------------------------------------------------------------------*/
+	@media screen and (max-width: 1920px) {
+
+	}
+	@media screen and (max-width: 1024px) {
+    /*軟體下載頁*/
+    ul.software_ul li:nth-child(3){width:20%;}
+    ul.software_ul li:nth-child(4){display: none;}
+    .news_L {
+        margin-bottom: 20px;
+    }
+    /*內頁h1統一對齊*/
+    .content h1
+     {
+      font-size: 33px;
+      margin-top: 10px;
+    }
+    /*內頁padding統一對齊*/
+    .content {
+      padding: 2% 4%;
+    }
+    #service_branch {
+      padding: 2% 4%;
+    }
+    .branch_R{
+      padding-bottom: 63.8%; 
+    }
+    .branch_R .img_body {
+      bottom: none;
+    }
+
+    /*最新消息頁面區塊調整*/
+    #newslist .grid-sizer{ width: 32.3%; }
+    #newslist .news_blocks {
+      width: 32.3%;
+    }
+   #newslist .news_blocks.news_blocks_big{
+      width: 65.6%;
+    }
+    #service_register.service_page .repair_ps .musk {
+      top: 106%;
+    }
+    .meduim_hidden{
+      display: none;
+    }
+    .meduim_show{
+      display: block;
+    }    
+    #privacy_policy .version_side{
+      display: none;
+    }
+    /*公司據點調整*/
+    .info_L{
+      border-right:none;
+    }
+    .info_R ul{
+        margin: 20px 0 0;
+    }
+    .info_R ul li{
+        width: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 0 13px;
+    }    
+    .info_R ul li:hover, .info_R ul li{
+      background:none;
+      margin-bottom: 4px;
+    }
+    .info_R ul li:hover, .info_R ul li:hover{
+      background:none;
+      border: 1px solid #FFF;
+      background-color: #BDBDBD;
+    }
+    .info_R ul li:hover, .info_R ul li:hover a{
+      color: #FFF;
+    }
+    .info_R ul li:hover, .info_R ul li.active{
+      background:none;
+      border: 1px solid #FFF;
+      background-color: #BDBDBD;
+    }
+
+    .info_R ul li:hover, .info_R ul li.active a{
+      color: #FFF;
+    }
+    .medium_marginB_5px{
+       margin-bottom: 5px;
+    }
+    /*表格地址*/
+    /*.zmedium-4{
+      width: 32.66666%;
+      margin-right: 0.66667%;
+    }*/
+
+	}
+	/*平板取消hover效果*/
+	@media screen and (max-width: 768px) {
+	}
+	@media screen and (max-width: 700px) {
+    .button-group{
+      max-width: 410px;
+    }
+	}
+	/*foundation的small size*/
+	@media screen and (max-width: 641px) {
+    /*全頁面*/
+     .content_in{
+        padding: 5px 0%;
+        border: none;
+        border-radius: 0px;        
+        background-color: transparent;
+        box-shadow: none;
+    }
+    .content_in>.columns{
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+    .row .row.secure_BOX {
+        width: 100%;
+        margin: 0px auto;
+        /*padding: 0px;*/
+        background-color: #FFF;
+        border: medium none;
+        border-radius: 0px;
+        box-shadow: none;
+        padding: 0px 20px;
+    }
+    /*最新消息頁*/
+    #news .content_in{
+       border: 1px solid #DEDEDE;
+        border-radius: 5px;
+        padding: 25px 2%;
+        background-color: #F1F1F1;
+        box-shadow: 0px 0px 0px 1px #CDCBC4;
+    }
+    #news .news_in_page_all{
+      margin-top:0px;
+    }
+    /*軟體下載頁*/
+    ul.software_ul li:nth-child(1){width:100%;}
+    ul.software_ul li:nth-child(2){display: none;}
+    ul.software_ul li:nth-child(3){display: none;}
+    ul.software_ul li:nth-child(4){display: none;}
+    ul.software_ul li:nth-child(5){display: none;}
+    .row .row.secure_BOX .columns.software_div{
+      padding: 1% 5%;
+    }
+    #news h1{
+      margin-bottom: 25px;
+      
+    }
+    a.button01 {
+      float: left;
+    }
+    a.button02 {
+      float: left;
+    }
+
+    .branch_L ul li{
+    height: 60px;
+    padding: 0;
+    }
+
+    .branch_L ul li .branch_block span.arrow{
+      background:none; 
+    } 
+    .branch_L ul li.active .branch_block span.arrow{
+      background:none; 
+    }
+    .branch_L ul li:hover .branch_block span.arrow{
+      background:none; 
+    }
+    .branch_L .branch_block .p01 {
+        font-size: 18px;
+        line-height: 42px;
+    }   
+    .branch_L ul li .branch_block .p01 {
+        text-align: center;
+        line-height: 60px;
+    }
+
+     /*最新消息頁面區塊調整*/
+    #newslist .grid-sizer{ width: 48%; }
+    #newslist .news_blocks {
+      width: 48%;
+    }
+    #newslist .news_blocks.news_blocks_big{
+      width: 48%;
+    }
+    #service_register.service_page .repair_ps .musk {
+      top: 101%;
+    }
+    .service_page .line3 input[type="checkbox"] + label,
+    .service_page .line3 input[type="radio"] + label {
+      width: 90%;
+    }
+    .service_page .line2 input[type="checkbox"] + label,
+    .service_page .line2 input[type="radio"] + label {
+        width: 90%;
+    }
+    /*表格*/
+    .service_page table td.td_L {
+        width: 30%;
+        padding: 0;
+    }
+    .service_page table td.td_R {
+      width: 70%;
+    }
+    .small_marginB_5px{
+      margin-bottom: 5px;
+    }
+
+    .service_page td.table_h3 span {
+      padding-left: 15px;
+    }
+    .service_page .line3 label {
+      width: 100%;
+    }
+    .service_page a.btn_RWD{
+      display: block;
+      width: 100%;
+      height: 40px;
+      line-height: 38px;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 5px;
+    }
+    /*經銷商認證頁*/
+    #service_dealer .service_page .adjust02{
+      margin-top: 5px;
+    }
+    .row .row.dealer_wrap {
+        margin: 0px 0px 20px;
+    }
+    .row .row.secure_BOX {
+      padding: 0px 20px 20px;
+  }
+    .row .row.secure_BOX .columns{
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .row .row.secure_BOX .row{
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+    #service_dealer h3,
+    #software_dl h3{
+      margin: 20px 20px 0 20px;
+    }
+
+    .secure_search{
+      text-align: left;
+    }
+    .secure_search p{
+      margin:10px 0;
+    }
+    .branch_R span.txt_R{
+      line-height: 20px;
+    }
+    /*表格地址*/
+    .zsmall-12{
+      width: 100%;
+      margin-right: 0rem;
+    }
+    .service_page table td input.zipcode_input {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+
+	}
+	@media screen and (max-width: 500px) {
+    .wrap_map {
+      padding-bottom: 80%;
+    }
+    .branch_R{
+      padding-bottom: 100%; 
+    }
+	}
+	@media screen and (max-width: 400px) {
+	}

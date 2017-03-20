@@ -1,0 +1,156 @@
+	/*------------------------------------------------------------------
+	Theme Name: SHARP
+	Author URI: http://www.begonia.tw/
+	Description: Index Layout
+	Author: Begonia Design, Inc.
+	------------------------------------------------------------------*/
+	
+	@charset "utf-8";
+	
+	/*.row{
+		min-width: 100%;
+	}*/
+	.draft_wrap h3.color_main{
+		color: #CA0715;;
+	}
+	.draft_wrap h3.color_sub{
+		color:#0E6EB8;
+	}
+	.draft_wrap h3.color_gray{
+		  color: #3F3F3F;
+	}
+	/*每小格~*/
+	.draft_wrap{
+		clear: both;
+		overflow: hidden;
+  		padding-top: 2%;
+ 		 padding-bottom: 3%;
+	}
+	.draft_wrap h3{
+		/*color: #0E6EB8;
+		font-weight: bolder;*/
+		margin-top: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+		color: #3F3F3F;
+  		font-weight: bolder;
+
+	}
+	.draft_wrap h3 span{
+		display: block;
+		 color: #666;
+		  font-size: 1.025rem;
+		  margin: 0;
+		  font-weight: bolder;
+	}
+	.draft_wrap h4{
+		  font-size: 1.4375rem;
+		color: #CA0715;
+		/*font-weight: bolder;*/
+		font-weight: bolder;
+		margin-bottom: 10px;	
+	}	
+	.draft_wrap h4.sub{
+		 color: #272727;
+		 font-weight:100;
+  		 font-size: 1.2375rem;
+	}
+	.draft_wrap h5{		
+  		/*color: #666;	
+  		color: #0E6EB8;
+  		font-size: 1.325rem;*/
+		font-weight: bolder;
+  		color: #0E6EB8;
+  		font-size: 1.3rem;
+	}
+	.draft_wrap h5.sub{
+		  color: #666;
+		  font-size: 1.025rem;
+		  margin: 0;
+		  font-weight: bolder;
+		}
+	.draft_wrap p{
+		
+	}
+	/*table_A,條紋狀*/
+	table.table_A{
+
+	}
+	table.table_A tr:nth-child(even){
+		background: #EDEDED;
+	}
+	table.table_A td{
+		vertical-align: center;
+
+	}
+	/*table_B,條紋狀*/
+	table.table_B{
+
+	}
+	table.table_B th{
+		/*background: #0E6EB8;*/
+		background: #747474;
+		color: #fff;
+		text-align: center;
+		font-weight: 100;
+	}
+	table.table_B td{
+		vertical-align: center;
+		background: #EDEDED;
+
+	}
+
+
+
+	.year_wrap{
+		padding:0;
+	}
+	.year_number{
+		/*width: 100%;*/
+		text-align: center;
+	}
+	.year_dot{
+		margin: 10px 0;
+	}
+	.year_wrap h6{
+		font-weight: bold;
+  		color: #0E6EB8;
+	}
+	.year_wrap p{
+		
+	}
+
+	/*------------------------------------------------------------------
+	Different Width Solution
+	------------------------------------------------------------------*/
+	
+	@media screen and (max-width: 1920px) {
+
+	} 
+	@media screen and (max-width: 1024px) {
+	}
+	@media screen and (max-width: 800px) {
+	} 
+	/*平板取消hover效果*/	
+	@media screen and (max-width: 768px) {
+
+	} 
+	@media screen and (max-width: 680px) {
+	}
+	@media screen and (max-width: 641px) {	
+		.year_wrap h6{
+			text-align: center;
+		}
+		.year_wrap p{
+			text-align: center;			
+		}
+	}
+	@media screen and (max-width: 500px) {
+
+	}
+	@media screen and (max-width: 420px) {
+	} 
+	@media screen and (max-width: 350px) {
+	} 
+
+
