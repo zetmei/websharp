@@ -1,0 +1,655 @@
+	/*------------------------------------------------------------------
+	Theme Name: SHARP
+	Author URI: http://www.begonia.tw/
+	Description: Index Layout
+	Author: Begonia Design, Inc.
+	------------------------------------------------------------------*/
+
+	@charset "utf-8";
+	/*------------------------------------------------------------------
+	index
+	------------------------------------------------------------------*/
+	/*排版用*/
+	.content{
+	}
+
+.version_BG{
+
+}
+.version_CT{
+	position: relative;
+	top:0px;
+	left: 0%;
+	/*left: 14%;*/
+	padding: 9% 2% 5%;
+}
+.version_title{	
+	font-size:50px; 
+	line-height:50px; 
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	color: #5d98a3;
+	font-weight: normal;
+	margin-top: 0px;
+	letter-spacing: 3px;
+}
+.version_p{
+	font-size:16px; 
+	line-height:26px; 
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	color: #000;
+    margin-top: 20px;
+}
+
+/********************************客戶服務頁面******************/
+#service{
+	position: relative;
+	width: 100%;
+	/*min-height: 558px;*/
+	background:url(../images/page/full_vision/service01.jpg) 0 0 no-repeat;
+	background-size: 100% 100%;
+}
+#service .version_title{	
+	color: #5d98a3;
+}
+#service .version_p{
+	max-width: 430px;
+}
+/*配圖*/
+#service .version_side{
+  position: absolute;
+  width: 46%;
+  /*max-width: 615px;*/
+  height: 498px;
+  right: 1%;
+  bottom: 0;
+  background: url(../images/page/full_vision/service02.png) right bottom no-repeat;
+  background-size: 100%;
+}
+/*圓形icon*/
+#service .version_ul{
+	margin-top:30px;
+}
+#service ul{
+	list-style-type: none;
+	margin-left: 11px;
+	margin-bottom: 15px;
+}
+#service ul span{
+	display: block;
+}
+#service .ul_SECOND{
+	margin-left: 85px;
+	margin-top: 10px;
+}
+#service ul li{
+	position: relative;
+	display: inline-block;
+	width: 115px;
+	height: 115px;
+	border:1px solid #fafcfd;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.76);	
+	margin: 10px;
+	/*box-shadow: 0px 0px 6px -8px #3c7d87;*/
+}
+#service ul li a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+#service ul li span{
+	  position: absolute;
+	  top: 71px;
+	  width: 100%;
+	  display: block;
+	  text-align: center;
+	  padding: 0 15px;
+	  line-height: 19px;
+	  color:#717071;
+	  font-family: "微軟正黑體", "Microsoft JhengHei";
+
+}
+#service .ul_TOP li:nth-child(1):hover { border:1px solid #bbf4ec; }
+#service .ul_TOP li:nth-child(2):hover { border:1px solid #caebfd; }
+#service .ul_TOP li:nth-child(3):hover { border:1px solid #ffcfcc; }
+#service .ul_SECOND li:nth-child(1):hover { border:1px solid #e9cefd;}
+#service .ul_SECOND li:nth-child(2):hover { border:1px solid #ffe2d0;}
+#service .ul_SECOND li:nth-child(3):hover { border:1px solid #fff0ba;}
+
+
+#service .ul_TOP li:nth-child(1) a{background:url(../images/page/full_vision/service_icon.png) -31px -16px no-repeat;}
+#service .ul_TOP li:nth-child(2) a{background:url(../images/page/full_vision/service_icon.png) -172px -16px no-repeat;}
+#service .ul_TOP li:nth-child(3) a{background:url(../images/page/full_vision/service_icon.png) -313px -16px no-repeat;}
+#service .ul_SECOND li:nth-child(1) a{background:url(../images/page/full_vision/service_icon.png) -105px -153px no-repeat;}
+#service .ul_SECOND li:nth-child(2) a{background:url(../images/page/full_vision/service_icon.png) -246px -153px no-repeat;}
+#service .ul_SECOND li:nth-child(3) a{background:url(../images/page/full_vision/service_icon.png) -388px -153px no-repeat;}
+
+/*換色*/
+#service .ul_TOP li:nth-child(1):hover{background-color:#7CE1D3;}
+#service .ul_TOP li:nth-child(2):hover{background-color:#99CEEC;}
+#service .ul_TOP li:nth-child(3):hover{background-color:#FA9F9A;}
+#service .ul_SECOND li:nth-child(1):hover{background-color:#C8A4E3;}
+#service .ul_SECOND li:nth-child(2):hover{background-color:#ffab75;}
+#service .ul_SECOND li:nth-child(3):hover{background-color:#F3D15A;}
+
+/*li a換背景*/
+#service .ul_TOP li:nth-child(1):hover a{background:url(../images/page/full_vision/service_icon2.png) -31px -16px no-repeat;}
+#service .ul_TOP li:nth-child(2):hover a{background:url(../images/page/full_vision/service_icon2.png) -172px -16px no-repeat;}
+#service .ul_TOP li:nth-child(3):hover a{background:url(../images/page/full_vision/service_icon2.png) -313px -16px no-repeat;}
+#service .ul_SECOND li:nth-child(1):hover a{background:url(../images/page/full_vision/service_icon2.png) -105px -153px no-repeat;}
+#service .ul_SECOND li:nth-child(2):hover a{background:url(../images/page/full_vision/service_icon2.png) -246px -153px no-repeat;}
+#service .ul_SECOND li:nth-child(3):hover a{background:url(../images/page/full_vision/service_icon2.png) -388px -153px no-repeat;}
+
+#service ul li:hover span{
+	color:#fff;
+}
+/*************************************產品支援頁面**********/
+#product_support{
+	position: relative;
+	width: 100%;
+	/*min-height: 558px;*/
+	background:url(../images/page/full_vision/surpport01.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+
+}
+#product_support .version_title{	
+	color: #689ee7;
+}
+/*配圖*/
+#product_support .version_side{
+  position: absolute;
+  width: 46%;
+  max-width: 211px;
+  height: 318px;
+  right: 15%;
+  bottom: 0;
+  background: url(../images/page/full_vision/surpport02.png) right bottom no-repeat;
+  background-size: 100%;
+}
+/*方形區塊*/
+#product_support .version_ul{
+	margin-top:30px;
+}
+#product_support ul{
+	list-style-type: none;
+	margin-left: 0px;
+	margin-bottom: 15px;
+}
+#product_support ul span{
+	display: block;
+}
+#product_support .ul_SECOND{
+	margin-left: 85px;
+	margin-top: 10px;
+}
+#product_support ul li{
+	position: relative;
+	display: inline-block;
+	width: 284px;
+	height: 235px;
+	border:1px solid #DADADA;
+	background: rgba(255, 255, 255, 0.68);	
+	margin: 0 1%;
+}
+#product_support ul li a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: block;
+
+}
+#product_support ul li span{
+	  position: absolute;
+	  top: 117px;
+	  width: 100%;
+	  display: block;
+	  text-align: center;
+	  padding: 0 15px;
+	  line-height: 19px;
+	  color:#689ee7;
+	  font-size: 16px;
+	  font-family: "微軟正黑體", "Microsoft JhengHei";
+	  font-weight: bold;
+}
+#product_support ul li span.block_txt{
+	  position: absolute;
+	  top: 144px;
+	  width: 100%;
+	  display: block;
+	  text-align: center;
+	  padding: 0 15px;
+	  line-height: 19px;
+	  font-family: "微軟正黑體", "Microsoft JhengHei";
+	  font-weight: bold;
+	  font-size: 12px;
+	  color:#4C4C4C;
+	  text-align: left;
+  	  padding: 0 10%;
+}
+#product_support li:nth-child(1) a{background:url(../images/page/full_vision/surpport_icon1.png) center 25px no-repeat;}
+#product_support li:nth-child(2) a{background:url(../images/page/full_vision/surpport_icon2.png) center 25px no-repeat;}
+#product_support ul li:hover{
+	border:1px solid #689ee7;
+	background: rgba(255, 255, 255, 1);	
+	box-shadow: 6px 6px 0px 0 rgba(155, 155, 155, .4);
+	/*transition:box-shadow .1s;*/
+}
+#product_support ul li:hover a{
+
+}
+#product_support ul li:hover span{
+}
+
+/*************************************人才招募頁面**********/
+#hr{
+	position: relative;
+	width: 100%;
+	min-height: 558px;
+	background:url(../images/page/full_vision/hr01.png) 0 0 no-repeat;
+	background-size: 100% 100%;
+
+}
+#hr .row{
+	max-width: 100%;
+}
+#hr .version_CT{
+	padding: 4% 2% 5% 14%;
+}
+#hr .version_title{	
+	color: #ee0011;
+}
+/*表格*/
+.hr_table{
+	float: left;
+ 	width: 69%;	
+	border:1px solid #f2f2f2;
+	background-color: #fff;
+	padding-bottom: 15px;
+}
+/*右區塊*/
+.hr_ps{	
+	position: relative;
+	float: left;
+	width: 23%;
+	/*outline: #F00 dashed 1px;*/
+	margin-left: 6%;
+	padding: 26px 24px 38px;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.hr_ps span{
+	display: block;
+	font-size: 14px;
+	line-height: 24px;
+	color:#6A6A6A;
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	  
+}
+.hr_ps span a{
+	font-size: 16px;
+	color:#6A6A6A;
+	text-decoration: underline;
+}
+.hr_ps span a:hover{
+  opacity: .7;
+}
+.hr_ps span.p_empha{
+	font-size: 16px;
+	color:#000;
+	line-height: 33px;
+	font-weight: bold;
+}
+/*微調*/
+.hr_ps .adjust01{
+	margin-top: 11px;
+} 
+/*右下absolute*/ 
+.musk{
+	  position: absolute;
+	  top: 90%;
+	  display: block;
+	  width: 127%;
+	  height: 50%;
+	  background-color: #ee0011;
+	  /*opacity: 0.36;*/
+	  -webkit-transform: rotate(-10deg);
+	  -ms-transform: rotate(-10deg);
+	  -moz-transform: rotate(-10deg);
+	  transform: rotate(-10deg);
+	  left: -8%;
+}
+.musk_txt{
+	position: absolute;
+	bottom: 1px;
+ 	right: 7px;
+}
+.hr_ps .musk_txt a{
+	font-size: 14px;
+	color:#fff;
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	text-decoration: none;
+}
+/*****人資表格內容*/
+.hr_table table{
+	border:0px solid #f2f2f2;
+	margin-bottom: 0;
+	
+}
+/*.table_scroll{
+	max-height: 301px;
+	overflow: scroll;
+	overflow-x: hidden;
+
+}*/
+.hr_table th{
+	text-align: center;
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 25px;
+	border-bottom:1px solid #f2f2f2;
+}
+.hr_table th:nth-child(1){width: 20%;}
+.hr_table th:nth-child(2){width: 20%;}
+.hr_table th:nth-child(3){width: 20%;}
+.hr_table th:nth-child(4){width: 20%;}
+.hr_table th:nth-child(5){width: 20%;}
+.hr_table td{
+	text-align: center;
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	font-size: 14px;
+	line-height: 25px;
+	color:#6B6B6B;
+	border-bottom:1px solid #f2f2f2;
+}
+.btn.hrbtn{
+	
+}
+
+/*************關於我們*/
+#about.content{
+  /*top: 77px;*/
+}
+#about .area {
+	width: 100% ;
+	min-height:auto;
+	margin:0 auto ;
+	padding:0;
+	/*max-width: 1480px ;*/
+	position:relative ;
+	/*box-shadow:0 0 30px rgba(0,0,0,0.6);*/
+	/*border:1px solid #ccc ;*/
+} 
+#about #area1 { background-color:#fff;/*background:url(../images/page/about/bg01.jpg) 50% 0  no-repeat;*/ }
+#about #area2 { background:url(../images/page/about/about01.jpg) 50% 0  no-repeat fixed ; background-size: cover;}
+#about #area3 { background-color:#fff; }
+#about #area4 { background:url(../images/page/about/about02.jpg) 50% 0  no-repeat fixed ; background-size: cover;}
+#about #area5 { background-color:#fff; }
+
+
+#area3_tag{
+	
+}
+/*圖片最小寬*/
+#about #area2,#about #area4{
+	/* min-height: 450px;*/
+	padding-top:33%;
+}
+
+#about .scroll_nav{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: -55px;
+	z-index: 10;
+	width: 60px ;
+	height:auto;
+}
+#about .scroll_nav ul {
+	height: auto;
+	width: auto;
+	list-style-type: none;
+}
+#about .scroll_nav ul li{
+	position: relative;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	margin: 5px;
+	background-color: #fff;
+	border:2px solid #DCDCDC; 
+	/*text-indent: -9999px;*/
+}
+#about .scroll_nav ul li:hover{
+	background-color: #ee0011;
+	border:2px solid #ee0011; 
+}
+#about .scroll_nav ul li a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+#about .scroll_nav ul li.active{
+	background-color: #ee0011;
+	border:2px solid #ee0011; 
+}
+
+#about .scroll_nav ul li a .label{
+  display: none;
+  position: absolute;
+  background: #A5A5A5;
+  color: #fff;
+  font-size: 12px;
+  right: 18px;
+  top: -8px;
+  padding: 5px 8px 5px 8px;
+}
+.label:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -6px;
+  top: 5px;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid #A5A5A5;
+}
+#about .scroll_nav ul li:hover a .label{
+   display: block;
+}
+
+/*文字區塊*/
+#about #area1,#about #area3,#about #area5{
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.44);
+ 	z-index: 2;
+ 	padding: 4% 15%;
+}
+#about #area5{
+	padding: 4% 15% 1% 15%;;
+}
+/*內容文案*/
+#about h3{
+	font-size: 42px;
+	color:#000;
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	margin-top:0;
+	margin-bottom: 10px;
+}
+#about p{
+	font-size: 17px;
+	color:#000;
+	font-family: "微軟正黑體", "Microsoft JhengHei"; 
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+#about #area1 p,#about #area5 p{
+	width: 70%;
+}
+/*按鈕*/
+#about .btn_warp{
+}
+#about .btn_R.aboutbtn{
+	display: inline-block;
+	position: relative;
+	margin: 5px 5px;
+	color:#686868;
+	color:#FFF;
+    text-align: center;
+ } 
+#about .aboutbtn:hover{
+ 	opacity: 0.8;
+ }
+ #about .btn_R span{ 	
+ 	padding:5px 0 5px 16px;
+ 	padding: 5px 0 5px 25px;
+ 	font-family: Helvetica;
+ 	font-weight: bolder;
+ }
+ #about .btn_R.aboutbtn01 span{
+ 	background: url(../images/layout/icon_18.png) 0 center no-repeat;
+  	background-size:12px;
+
+  	background: url(../images/layout/about_icon.png) -5px -1px no-repeat;
+  	background-size: 30px;
+
+	background: url(../images/layout/about_icon.png) -5px -34px no-repeat;
+  	background-size: 30px;
+}
+#about .btn_R.aboutbtn02 span{
+  	background: url(../images/layout/icon_18.png) 0 center no-repeat;
+  	background-size:12px;
+
+ 	background: url(../images/layout/about_icon.png) -5px -79px no-repeat;
+  	background-size: 35px;
+
+  	background: url(../images/layout/about_icon.png) -5px -115px no-repeat;
+  	background-size: 35px;  	
+ }
+
+
+/*配圖*/
+#about .version_side{
+  position: absolute;
+  width: 46%;
+  max-width: 615px;
+  height: 498px;
+  right: 1%;
+  bottom: 0;
+  background: url(../images/page/about/about02.png) right bottom no-repeat;
+  background-size: 100%;
+}
+.m_version_side{
+	display: none;
+}
+
+
+	/*------------------------------------------------------------------
+	Different Width Solution
+	------------------------------------------------------------------*/
+	@media screen and (max-width: 1920px) {
+
+	}
+	/*foundation的medium*/
+	@media screen and (max-width: 1089px) {
+	.version_CT{
+	   padding: 5% 3%;
+	}
+	#service ul{
+		  margin-left: 22px;
+	}
+	#service .ul_SECOND {
+	  margin-left: 0px;
+	}
+	#hr .version_CT{
+	  padding: 4% 4% 5% 4%;
+	}
+	.hr_table {
+	  width: 100%;
+	}
+	.hr_ps {
+	  width: 100%;
+	  margin-left: 0%;
+	  margin-top: 2%;
+	}
+	#about #area1,#about #area3,#about #area5{
+ 	padding: 4% 5%;
+	}
+	#about .scroll_nav{
+		right: -15px;
+	}
+}
+
+	@media screen and (max-width: 950px) {
+	#product_support .version_side{
+		display: none;
+	}
+	#product_support ul li{
+		width: 47%;
+	}
+
+	}
+	@media screen and (max-width: 860px) {
+	#about #area1 p, #about #area5 p{
+		width: 100%;
+	}
+	/*配圖*/
+	#about .version_side{
+		display: none;
+	}
+	#about .m_version_side{
+	display: block;
+	}
+	#about .btn_W.aboutbtn{
+		width: 100%;
+	}
+
+
+	}
+	@media screen and (max-width: 780px) {
+		#service .version_side{
+		  display: none;
+		}
+		#service ul{
+		  text-align: center;
+		}
+		#service .ul_SECOND {
+		  margin-left: 0px;
+		}
+	}
+	/*平板取消hover效果*/
+	@media screen and (max-width: 768px) {
+		#service ul {
+		  margin-left: 0;
+		}
+		#service .ul_SECOND {
+		  margin-left: 0px;
+		}
+	}
+	@media screen and (max-width: 680px) {
+		#about #area5 p{
+			width: 100%;
+		}
+	}
+	/*foundation的small*/
+	@media screen and (max-width: 641px) {
+		.version_CT{
+		  padding: 5% 3%;
+		}
+	
+	}
+	@media screen and (max-width: 520px) {
+		#service ul span{
+			display: inline;
+		}
+		#product_support ul li{
+			width: 95%;
+			margin-bottom: 2%;
+		}
+	}
+	@media screen and (max-width: 400px) {
+	}

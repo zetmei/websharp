@@ -1,0 +1,148 @@
+	/*------------------------------------------------------------------
+	Theme Name: SHARP
+	Author URI: http://www.begonia.tw/
+	Description: Index Layout
+	Author: Begonia Design, Inc.
+	------------------------------------------------------------------*/
+
+	@charset "utf-8";
+	/*------------------------------------------------------------------
+	index
+	------------------------------------------------------------------*/
+	/*排版用*/
+	.content{
+	}
+
+#newslist{
+	padding: 2% 14%;
+}
+#newslist h1{
+	font-size:28px; 
+	line-height:28px; 
+	font-family: "微軟正黑體", "Microsoft JhengHei";
+	color: #000;
+	font-weight: normal;
+}
+/*瀑布流*/
+/* ---- button-group ---- */
+.button-group{
+	position: relative;
+	margin: 16px auto;
+	text-align: center;
+	width: auto;
+	letter-spacing: -4px;
+}
+.button-group:after {
+	position: absolute;
+ 	content: '';
+    display: block;
+    clear: both;
+/*    background-color: #C5BBBB;
+    width: 100%;
+    height: 1px;*/
+}
+
+.button-group .button {
+	border-radius: 0;
+	margin-left: 0;
+	margin-right: 0px;
+	letter-spacing: 0px;
+}
+
+/* ---- button ---- */
+.button-group .button {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1.0em;
+  background: transparent;
+  border: none;
+  border-radius: 7px;
+  color: #222;
+  font-family: "微軟正黑體", "Microsoft JhengHei";
+  font-size: 17px;
+  cursor: pointer;
+  width: 113px;
+  margin:0;
+}
+.button:after,.button.is-checked:after{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 1px;  
+  background-color:#ccc; 
+}
+
+
+.color0.is-checked,.color0:hover{ color:#999999; }
+.color1.is-checked,.color1:hover{ color:#F559F4; }
+.color2.is-checked,.color2:hover{ color:#F37E2E; }
+.color3.is-checked,.color3:hover{ color:#444455; }
+.color4.is-checked,.color4:hover{ color:#26B774; }
+.color5.is-checked,.color5:hover{ color:#EE000D; }
+
+.color0.is-checked:after,.color0:hover:after{ height:3px; background-color:#999999; }
+.color1.is-checked:after,.color1:hover:after{ height:3px; background-color:#F559F4; }
+.color2.is-checked:after,.color2:hover:after{ height:3px; background-color:#F37E2E; }
+.color3.is-checked:after,.color3:hover:after{ height:3px; background-color:#444455; }
+.color4.is-checked:after,.color4:hover:after{ height:3px; background-color:#26B774; }
+.color5.is-checked:after,.color5:hover:after{ height:3px; background-color:#EE000D; }
+
+
+/* ---- isotope ---- */
+
+.isotope {
+ /* border: 1px solid #333;*/
+}
+
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .news_blocks ---- */
+.news_blocks {
+  position: relative;
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding: 10px;
+  background: #888;
+  color: #262524;
+}
+
+
+/*區塊分開設定*/
+.news_blocks.newevent { background-color:#F559F4; }
+.news_blocks.newproduct { background-color:#F37E2E; }
+.news_blocks.investment { background-color:#444455; }
+.news_blocks.report { background-color:#26B774; }
+.news_blocks.advertising { background-color:#EE000D; }
+
+
+	/*------------------------------------------------------------------
+	Different Width Solution
+	------------------------------------------------------------------*/
+	@media screen and (max-width: 1920px) {
+
+	}
+	@media screen and (max-width: 1024px) {
+
+	}
+	/*平板取消hover效果*/
+	@media screen and (max-width: 768px) {
+	}
+	@media screen and (max-width: 680px) {
+	}
+	/*foundation的small size*/
+	@media screen and (max-width: 641px) {
+	}
+	@media screen and (max-width: 520px) {
+
+	}
+	@media screen and (max-width: 400px) {
+	}
